@@ -131,7 +131,7 @@ if ($this->session->flashdata('reg_success')) {
                     <div class="small m-0 text-white">Copyright &copy; HireDev 2021</div>
                 </div>
                 <div class="col-auto">
-                    <a class="link-light small" href="#!">About</a>
+                    <a class="link-light small" href="<?= base_url() ?>Users/about">About</a>
                     <span class="text-white mx-1">&middot;</span>
                     <a class="link-light small" href="<?= base_url() ?>users/terms">Terms</a>
                 </div>

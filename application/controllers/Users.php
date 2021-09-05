@@ -272,6 +272,11 @@ class Users extends CI_Controller
 		$this->load->view('temp/terms');
 	}
 
+	public function about()
+	{
+		$this->load->view('temp/about');
+	}
+
 	public function infophp()
 	{
 		$this->load->view('users/info');

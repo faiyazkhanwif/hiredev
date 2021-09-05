@@ -53,7 +53,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link" href="<?= base_url() ?>users/browsedevs"><i class="fas fa-users"></i> Browse Devs &nbsp;&nbsp;</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About &nbsp;&nbsp;</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?= base_url() ?>Users/about">About &nbsp;&nbsp;</a></li>
                         <li class="nav-item"><a class="nav-link" href="<?= base_url() ?>User-home">Profile &nbsp;&nbsp;&nbsp;</a></li>
                         <li class="nav-item"><a class="nav-link btn btn-info" href="<?= base_url() ?>User-home/hireddevs">Hired Devs</a></li>
                         &nbsp;&nbsp;&nbsp;
@@ -148,7 +148,7 @@
                     <div class="small m-0 text-white">Copyright &copy; HireDev 2021</div>
                 </div>
                 <div class="col-auto">
-                    <a class="link-light small" href="#!">About</a>
+                    <a class="link-light small" href="<?= base_url() ?>Users/about">About</a>
                     <span class="text-white mx-1">&middot;</span>
                     <a class="link-light small" href="<?= base_url() ?>users/terms">Terms</a>
                 </div>
