@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 05, 2021 at 05:17 PM
+-- Generation Time: Sep 08, 2021 at 08:27 PM
 -- Server version: 10.4.19-MariaDB
 -- PHP Version: 7.4.20
 
@@ -33,6 +33,13 @@ CREATE TABLE `devapplications` (
   `contact` varchar(50) CHARACTER SET latin1 NOT NULL,
   `email` varchar(100) CHARACTER SET latin1 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `devapplications`
+--
+
+INSERT INTO `devapplications` (`appID`, `name`, `contact`, `email`) VALUES
+(8, 'test user', '+601121721029', 'ea@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -105,7 +112,6 @@ CREATE TABLE `users` (
   `email` varchar(100) NOT NULL,
   `password` varchar(255) NOT NULL,
   `type` varchar(20) NOT NULL DEFAULT 'U',
-  `membershipstatus` varchar(200) NOT NULL DEFAULT 'normal',
   `createdate` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -113,10 +119,11 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `contact`, `email`, `password`, `type`, `membershipstatus`, `createdate`) VALUES
-(7, 'Main Admin', '+8801791029323', 'admin@gmail.com', '$2y$12$JeOpo3aJNBzPCv2M33NizODaKIjoglPkNmfIIL96a1WMTOZDrHlBW', 'A', 'normal', '2020-04-21 10:54:26'),
-(49, 'Rahman Ali', '+11121721029', 'vv@gmail.com', '$2y$12$dJz41DgPBxBF9E9HYBLr0O0TxxeClpgsmkyy.OYmaXUPGnmzWZpP.', 'U', 'normal', '2021-09-04 23:26:43'),
-(50, 'Ariful Hasan Khan', '01516773217', 'arifkhant4@gmail.com', '$2y$12$JXSoGfisoQWpcFAJVaEy3OdoAmM0GbmhmaYakWd7fcEAtVnfZW.Ja', 'U', 'normal', '2021-09-05 08:23:19');
+INSERT INTO `users` (`id`, `name`, `contact`, `email`, `password`, `type`, `createdate`) VALUES
+(7, 'Main Admin', '+8801791029323', 'admin@gmail.com', '$2y$12$JeOpo3aJNBzPCv2M33NizODaKIjoglPkNmfIIL96a1WMTOZDrHlBW', 'A', '2020-04-21 10:54:26'),
+(49, 'Rahman Ali', '+11121721029', 'vv@gmail.com', '$2y$12$dJz41DgPBxBF9E9HYBLr0O0TxxeClpgsmkyy.OYmaXUPGnmzWZpP.', 'U', '2021-09-04 23:26:43'),
+(50, 'Ariful Hasan Khan', '01516773217', 'arifkhant4@gmail.com', '$2y$12$JXSoGfisoQWpcFAJVaEy3OdoAmM0GbmhmaYakWd7fcEAtVnfZW.Ja', 'U', '2021-09-05 08:23:19'),
+(51, 'tttttttttt', '+11121721029', 'tt@gmail.com', '$2y$12$4L6hQoDEeFb3rDJvf0Qkq.kLwu0eVIMA8ZpJmWijHxO0kLVc/t/Gu', 'U', '2021-09-08 18:26:32');
 
 --
 -- Indexes for dumped tables
@@ -161,7 +168,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `devapplications`
 --
 ALTER TABLE `devapplications`
-  MODIFY `appID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `appID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `devs`
@@ -185,7 +192,7 @@ ALTER TABLE `hires`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
