@@ -99,10 +99,7 @@
                                 <?= form_error('password', '<div class="text-danger">', '</div>'); ?>
 
                             </div>
-                            <!--
-                            <div class="small">
-                                <span class="text-muted">Forgot password? &nbsp;</span><a class="text-danger" href="">Click here</a>
-                            </div> -->
+                            
 
                             <br>
                             <br>
@@ -120,7 +117,7 @@
                         <div class="col-lg-1">
 
                         </div>
-                        <!--=== Login with social apps ===-->
+                        <!--=== Icons ===-->
                         <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
                             <br>
                             <br>

@@ -81,7 +81,6 @@ class Admin_model extends CI_Model
 		
 	}
 
-	
 	public function get_devs($limit, $offset)
 	{	
 		/*=== SQL join ===*/
