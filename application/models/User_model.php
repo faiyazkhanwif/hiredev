@@ -122,6 +122,7 @@ class User_model extends CI_Model
 		$query = $this->db->get('users');
 		return $query->row();
 	}
+	
 	public function get_user_details_alt($email)
 	{
 		$this->db->where('email', $email);
@@ -164,15 +165,6 @@ class User_model extends CI_Model
 		);
 
 		return $query = $this->db->where('id', $id)->update('users', $data);
-	}
-
-
-	public function terms_generate()
-	{
-		//$this->db->limit(6);
-		//$this->db->order_by('id', 'DESC');
-		$query = $this->db->get('termsdb');
-		return $query->result();
 	}
 
 }

@@ -58,7 +58,7 @@ class User_home extends CI_Controller
 	public function edit_profile()
 	{
 
-		#get existing informations
+		#get existing information
 		$this->load->model('User_model');
 		$id = $this->session->userdata('id');
 		$view['user_details'] = $this->User_model->get_user_details($id);
